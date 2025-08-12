@@ -1,0 +1,25 @@
+torch --extra-index-url https://download.pytorch.org/whl/128
+
+# backend/requirements.txt
+fastapi
+uvicorn[standard]
+sqlalchemy
+alembic
+psycopg2-binary
+redis
+python-jose[cryptography]
+passlib[bcrypt]
+python-multipart
+langchain
+langchain-openai
+langchain-community
+qdrant-client
+sentence-transformers
+openai-whisper
+pydub
+numpy
+transformers
+python-socketio
+python-dotenv
+hf_xet
+python-jose
