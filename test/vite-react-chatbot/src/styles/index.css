@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles can be added below this line */
+
+/* Example of a custom style for the chat container */
+.chat-container {
+    max-height: 500px; /* Limit the height of the chat area */
+    overflow-y: auto; /* Enable scrolling for overflow */
+}
+
+/* Style for chat bubbles */
+.chat-bubble {
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin: 5px 0;
+}
+
+/* User message bubble */
+.user-bubble {
+    @apply bg-blue-500 text-white self-end; /* Tailwind utility classes */
+}
+
+/* Bot message bubble */
+.bot-bubble {
+    @apply bg-gray-300 text-black self-start; /* Tailwind utility classes */
+}
+
+/* Typing indicator style */
+.typing-indicator {
+    @apply text-gray-500 italic; /* Tailwind utility classes */
+}
